@@ -18,5 +18,5 @@ def about():
 def contact():
   #info no datubazes
   return render_template('contact.html', phone = 22140077)
-
-app.run(host = '0.0.0.0', port = 8020)
+if __name__ == '__main__':
+  app.run(host = '0.0.0.0', port = 5232, threaded = True, debug = True)
